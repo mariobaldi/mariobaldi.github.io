@@ -1,4 +1,12 @@
-title: Mario Baldi's Blog
-theme: jekyll-theme-architect
-texture:
-  title: Mario Baldi's Blog
+# Setup
+name:         Project or Site name (Architect Theme)
+tagline:      A responsive theme for your project on GitHub Pages
+baseurl:      ""
+locale:       "en"
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
