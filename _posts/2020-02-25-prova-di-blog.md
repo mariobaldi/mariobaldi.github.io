@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Test post"
+comment: true
+author: Mario Baldi
 ---
 
 # Welcome
