@@ -10,4 +10,4 @@ Going to the control plane to install state is problematic, even when there is t
 
 What are the challenges of making state modifiable within the data plane?
 
-[posted](https://p4.org/p4/pensando-joins-p4.html) on the [Blog](https://p4.org/blog/) of the [P4 Language Consortium](https://p4.org/)
+ [Blog](https://p4.org/blog/) of the [P4 Language Consortium](https://p4.org/)
