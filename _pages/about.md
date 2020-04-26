@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A little information about me"
+title: "Mario Baldi"
 author: "Mario"
 permalink: /about/
 ---
