@@ -1,13 +1,13 @@
 # Site settings
 title:          "Mario's Blog"
-description:    "Minimal Jekyll theme for storytellers"
+description:    "Networking focused, especially at the edge"
 url:            "http://blog.baldi.info"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
 
 # Author
-author:         
+author:
   name:         Mario Baldi
   url:          http://baldi.info
   email:        com@baldi.info
