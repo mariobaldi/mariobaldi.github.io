@@ -1,15 +1,14 @@
 ---
 layout: post
 title: "About"
-author: "Chester"
+author: "Mario"
 permalink: /about/
 ---
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
+I am a Distinguished Technologist at Pensando Systems, Milpitas, CA, USA and Associate Professor of Information Processing Systems (on leave) at Politecnico di Torino (Technical University of Turin), Italy.
+I had held various positions in startup and established companies in the computer networking industry, as well as several visiting professorships at Universities in four continents. I have authored over 150 scientific publications and two books; I am an inventor on dozens of patents. Over the years, my research and engineering interests have covered programmable data planes, big data analytics, trust in software execution, internetworking, high performance switching, optical networking, quality of service, multimedia over packet networks, voice over IP, and computer networks in general.
+I hold an M.S. with honors (Summa Cum Laude) in Electrical Engineering and a Ph.D. in Computer and Systems Engineering, both from Politecnico di Torino, Italy.
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
+A [full resume](http://resume.baldi.info/) and the complete list of my [publications](http://pubs.baldi.info/) are available on my website at [www.baldi.info](http://baldi.info).
 
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
-
-Thanks for reading!
+Thanks for reading my blog!
