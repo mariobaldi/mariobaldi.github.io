@@ -16,6 +16,6 @@ Over the years, my research and engineering interests have covered programmable 
 
 I hold an M.S. with honors (Summa Cum Laude) in Electrical Engineering and a Ph.D. in Computer and Systems Engineering, both from Politecnico di Torino, Italy.
 
-A [full resume](http://resume.baldi.info/) and the complete list of my [publications](http://pubs.baldi.info/) are available on my website at [www.baldi.info](http://baldi.info).
+A [full resume](http://resume.baldi.info/) and the complete list of my [publications](http://pubs.baldi.info/) are available on my website at [baldi.info](http://baldi.info).
 
 Thanks for reading my blog!
