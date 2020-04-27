@@ -12,7 +12,7 @@ Hence, a little more than three weeks ahead of the planned date, the Open Networ
 
 # Pros and cons of a virtual event
 
-Although, of course, the networking aspect of the P4 Workshop is missing (the one among people, not the one related to devices ...), judging by the program, the content does not seem to be affected by the change of format.  
+Although, of course, the networking aspect of the P4 Workshop is missing (the one among people, not the one related to devices...), judging by the program, the content does not seem to be affected by the change of format.  
 On the other hand, since each talk has been separately recorded, the tight timing constraints of back-to-back talks typical of live events are relaxed and speakers have a chance to provide as much information as they deem needed. Not only, but if something goes wrong in the presentation, it can be fixed, thus potentially improving not only the content, but also the quality of presentations.   
 Of course a Q&A discussion open to a wide audience is missing in the recorded sessions, but chairpersons have done a great job in making up for the lack of an audience by putting a particular effort in asking great questions. Moreover, the ONF organizers have come up with the good idea of structuring several of the presentations into panels, so that various presenters can discuss together and ask each other questions.
 
