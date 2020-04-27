@@ -6,7 +6,7 @@ author: "Mario Baldi"
 permalink:
 ---
 
-The P4 Workshop, the yearly event where the [P4 community](http://p4.org) gets together, usually at Stanford, to review a year of work, discuss future ideas, and in general discuss all things P4 was scheduled for today and tomorrow.
+The P4 Workshop, the yearly event where the [P4 community](http://p4.org) gets together, usually at Stanford, to review a year of work, discuss future ideas, and in general discuss all things P4 was scheduled for this week.
 However, the COVID-19 pandemic got in the way, and as the date was approaching it became clear that such a large gathering of people would not be possible, even less would attendees from other areas be able to travel to California.<br>
 Hence, a little more than three weeks ahead of the planned date, the Open Networking Foundation (ONF) took the somewhat brave decision to convert the event into a virtual one, which obviously implied changing the format of the event. And maybe to reinforce this, the name itself was changed to "[P4 Expert Roundtable Series](https://p4.org/events/2020-p4-summit/)".
 
