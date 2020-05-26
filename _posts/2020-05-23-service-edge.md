@@ -9,9 +9,7 @@ excerpt: Silvano Gai and Mario Baldi point of view
 description: Where to implement network, security and storage services
 ---
 
-# Introduction
-
-[In a previous post,](https://silvanogai.github.io/posts/clos-part1/) we have discussed the basics of Clos topologies in data center networks, and we have seen how they enable us to achieve extremely high aggregate bandwidth. For example, let's use as a leaf a switch with 64 ports at 100 Gbps (ubiquitous these days) and connect 24 ports as uplinks. This configuration deploys 24 spine switches for a total aggregated bandwidth of 6.4 x 24 = 153 Tbps!
+[In a previous post,](https://silvanogai.github.io/posts/clos-part1/) Silvano has discussed the basics of Clos topologies in data center networks, and has seen how they enable us to achieve extremely high aggregate bandwidth. For example, let's use as a leaf a switch with 64 ports at 100 Gbps (ubiquitous these days) and connect 24 ports as uplinks. This configuration deploys 24 spine switches for a total aggregated bandwidth of 6.4 x 24 = 153 Tbps!
 
 Now let's consider how to implement in this example network security and visibility services, like firewall, micro-segmentation, load-balancing, tap network. The classical solution has been to use discrete appliances dedicated to a particular service and implement "service chaining" when more than one appliance must act on the traffic.
 
