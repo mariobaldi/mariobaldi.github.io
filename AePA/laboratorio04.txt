@@ -1,0 +1,69 @@
+Laurea in Ingegneria Informativa
+Corso di Algoritmi e Programmazione Avanzata - 01EIP
+Anno Accademico 2001-2002
+Esercizi Proposti per il Laboratorio
+ 
+Esercitazione di laboratorio numero 4
+-------------------------------------
+
+ 
+ 
+In questa esercitazione tutti i programmi richiesti devono essere costituiti
+da almeno due moduli: il primo contenente il main, il secondo contenente le
+varie funzioni.
+
+
+
+Esercizio 1
+-----------
+
+Visita di un grafo
+
+Un file contiene la descrizione di un grafo con il seguente formato.
+Ciascun nodo e` individuato da un nome di lunghezza massima uguale a
+10 caratteri alfabetici.
+Ciascuna riga individua un nodo e la sua lista delle adiacenze.
+Il primo nome sulla riga e` quello del nodo considerato, quelli successivi
+rappresentano quelli adiacenti.
+Ciascun nome e` separato dai successivi da un solo spazio.
+Non vi sono limitazioni teoriche al numero di nodi e archi del grafo.
+
+Scrivere un programma in linguaggio C che letto tale grafo ne effettui
+una visita in ampiezza e una visita in profondita`.
+Si legga da tastiera il vertice di partenza.
+
+
+
+Esercizio 2
+-----------
+
+Sia dato un file, nel quale sono descritte le relazioni di parentela per
+un numero imprecisato di individui. 
+Ogni riga del file descrive un individuo, specificato mediante nome e
+cognome suo, del padre e della madre  (separati dal carattere '/').
+Ad esempio, la riga:
+
+Luigi Rossi / Mario Rossi / Luisa Bianchi
+
+dice che Luigi Rossi e` figlio di Mario Rossi e Luisa Bianchi.
+
+Si carichi il file in una struttura dati in memoria che, specificato un
+individuo per mezzo di cognome e nome, permetta di effettuare con costo
+minimo le seguenti ricerche:
+* padre e madre dell'individuo
+* elenco dei figli dell'individuo
+* elenco dei fratelli (e delle sorelle) dell'individuo
+* elenco degli zii (e delle zie) dell'individuo.
+
+Si implementino quindi le operazioni di ricerca sopra citate.
+
+Si rispettino inoltre i seguenti vincoli:
+* Si ottimizzi la base dati per la velocita` di ricerca e per l'occupazione
+  di memoria.
+* Non si assuma alcun limite per il numero di figli di un individuo.
+* Non e` necessario ottimizzare la fase di lettura dell'archivio ma solo
+  quella di ricerca.
+* Le relazioni di parentela dipendono solo dalla struttura specificata nel
+  file e non dai cognomi.
+
+

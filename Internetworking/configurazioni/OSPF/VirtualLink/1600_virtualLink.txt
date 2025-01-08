@@ -1,0 +1,9 @@
+1600#show ip ospf virtual-links
+Virtual Link OSPF_VL4 to router 192.168.67.3 is up
+  Run as demand circuit
+  DoNotAge LSA not allowed (Number of DCbitless LSA is 4).
+  Transit area 2, via interface Ethernet0, Cost of using 74
+  Transmit Delay is 1 sec, State POINT_TO_POINT,
+  Timer intervals configured, Hello 10, Dead 40, Wait 40, Retransmit 5
+    Hello due in 00:00:00
+    Adjacency State FULL

@@ -1,0 +1,45 @@
+Current configuration:
+!
+version 11.2
+no service udp-small-servers
+no service tcp-small-servers
+!
+hostname 2503b
+!
+enable password libro
+!
+!
+interface Ethernet0
+ ip address 192.168.65.2 255.255.255.0
+!
+interface Serial0
+ ip address 192.168.1.2 255.255.255.0
+!
+interface Serial1
+ ip address 192.168.2.2 255.255.255.0
+!
+interface BRI0
+ ip address 192.168.196.2 255.255.255.0
+interface Serial0
+ ip address 192.168.1.2 255.255.255.0
+!
+interface Serial1
+ ip address 192.168.2.2 255.255.255.0
+!
+interface BRI0
+ ip address 192.168.196.2 255.255.255.0
+!
+router ospf 1
+ redistribute connected
+ network 192.168.0.0 0.0.3.255 area 0
+ network 192.168.65.0 0.0.0.255 area 2
+!
+no ip classless
+!
+line con 0
+line aux 0
+line vty 0 4
+ password libro
+ login
+!
+end

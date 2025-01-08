@@ -1,0 +1,59 @@
+box 
+  board slot 1 
+      type ansedsgx 
+  back
+  snmp 
+    community label public 
+        access read-write 
+      manager address 0.0.0.0 
+      back
+    back
+  back
+  tftp 
+      default-volume 1 
+  back
+  console portnum 1 
+      prompt {[%slot%:1]$ } 
+      auto-manager-script automgr.bat 
+      auto-user-script autouser.bat 
+  back
+  telnet 
+    client 
+    back
+    server                                                                      
+        prompt {[%slot%:TN]$ } 
+        auto-user-script autouser.bat 
+    back
+  back
+  ethernet slot 1 connector 1 
+      circuit-name AN2-E11 
+    ip address 192.168.64.4 mask 255.255.255.0 
+      arp 
+      back
+    back
+  back
+  serial slot 1 connector 1 
+      circuit-name AN2-S11 
+      bofl disabled 
+      promiscuous enabled 
+      service transparent 
+      wan-protocol ppp 
+    ppp 
+      line 
+      back
+      ip address 192.168.67.4 mask 255.255.255.0 
+          address-resolution none 
+        arp                                                                     
+        back
+      back
+    back
+  back
+  ip 
+    arp 
+    back
+    rip 
+    back
+    tcp 
+    back
+  back
+back

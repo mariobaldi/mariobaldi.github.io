@@ -1,0 +1,11 @@
+2503a#write terminal
+
+....
+
+router ospf 1
+ network 192.168.128.0 0.0.0.255 area 1
+ network 192.168.0.0 0.0.3.255 area 0
+ area 1 stub
+!
+
+....

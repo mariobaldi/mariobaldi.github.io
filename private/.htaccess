@@ -1,0 +1,6 @@
+AuthUserFile /users/baldi/public_html/private/.htpasswd
+AuthName "Restricted area of Mario Baldi"
+AuthType Basic
+<Limit GET>
+require valid-user
+</Limit>

@@ -1,0 +1,174 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.51 [en] (Win95; I) [Netscape]">
+   <meta name="Author" content="Mario Baldi e Pietro Nicoletti">
+   <title>Internetworking: configurazione del RIP</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#6600FF" vlink="#CC3399" alink="#FF0000">
+&nbsp;
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td><img SRC="small.gif" ALT="Immagine della copertina del libro" BORDER=0 height=178 width=196 align=LEFT></td>
+
+
+<td>
+<center>
+<h1>
+<i>Inter</i><font face="Arial">net</font><i>working</i></h1></center>
+
+
+<center><font size=+2>Mario Baldi e Pietro Nicoletti</font></center>
+
+
+<p><br></td>
+</tr>
+</table>
+
+
+<center>
+<h1>
+RIP</h1></center>
+I router sono stati configurati a utilizzare la versione 1 o la versione
+2 di RIP in modo da formare i dominii di routing mostrati in figura.
+<center>
+<p><a href="domini.gif"><img SRC="dominiSmall.gif" ALT="Dominii di routing RIP sulla rete di laboratorio" NOSAVE height=383 width=575></a></center>
+
+
+<p>Sono disponibili le configurazioni di tutti i router:
+<ul>
+<li>
+<a href="AN1_cmd.txt">Impostazione</a> e <a href="AN1_conf.txt">visualizzazione</a>
+della configurazione di <b>BayNetworks AN1</b>. Caratterisitche della configurazione:</li>
+
+
+<ul>
+<li>
+Split Horizon with Reverse-Poisoned (default) e Triggered-Update abilitato.</li>
+
+
+<li>
+<font face="Courier New,Courier">Timeout timer </font>al valore standard
+di 90 s (come suggerito nella specifica del RIP) invece del default di
+180 s.</li>
+
+
+<li>
+<font face="Courier New,Courier">Holddown timer</font> (chiamato garbage-collection
+timer nella specifica del RIP) al valore di 90 s (come suggerito nella
+specifica del RIP) invece del default di 120 s.</li>
+
+
+<li>
+La versione di default (usata se non indicato diversamente) &egrave; la
+1.</li>
+</ul>
+
+
+<li>
+<a href="AN2_cmd.txt">Impostazione</a> e <a href="AN2_conf.txt">visualizzazione</a>
+della configurazione di <b>BayNetworks AN2</b>.</li>
+
+
+<br>Caratterisitche della configurazione:
+<ul>
+<li>
+Split Horizon with Reverse-Poisoned (default) e&nbsp; Triggered-Update.</li>
+
+
+<li>
+<font face="Courier New,Courier">Timeout timer</font> al valore standard
+di 90 s (come suggerito nella specifica del RIP) invece del default di
+180 s.</li>
+
+
+<li>
+<font face="Courier New,Courier">Holddown timer</font> (chiamato garbage-collection
+timer nella specifica del RIP) al valore di 90 s (come suggerito nella
+specifica del RIP) invece del default di 120 s.</li>
+
+
+<li>
+La versione di utilizzata (attiva per default) &egrave; la 1.</li>
+</ul>
+
+
+<li>
+<a href="2503a_cmd.txt">Impostazione</a> e <a href="2503a_conf.txt">visualizzazione</a>
+della configurazione di <b>Cisco 2503a</b>.</li>
+
+
+<br>Caratterisitche della configurazione:
+<ul>
+<li>
+Split Horizon senza varianti (default)</li>
+
+
+<li>
+<font face="Courier New,Courier">Invalid timer</font> al valore di 180
+s, come suggerito nella specifica del RIP.</li>
+
+
+<li>
+<font face="Courier New,Courier">Holddown timer</font> (chiamato garbage-collection
+timer nella specifica del RIP) al valore di 120 s, come suggerito nella
+specifica del RIP.</li>
+
+
+<li>
+La versione di utilizzata (attiva per default) &egrave; la 1.</li>
+
+
+<li>
+<font face="Courier New,Courier">Flush timer</font> al valore di 240 s.</li>
+</ul>
+
+
+<li>
+<a href="2503b_cmd.txt">Impostazione</a> e <a href="2503b_conf.txt">visualizzazione</a>
+della configurazione di <b>Cisco 2503b</b>.</li>
+
+
+<li>
+<a href="2503c_cmd.txt">Impostazione</a> e <a href="2503c_conf.txt">visualizzazione</a>
+della configurazione di <b>Cisco 2503c</b>.</li>
+
+
+<li>
+<a href="1600_cmd.txt">Impostazione</a> e <a href="1600_conf.txt">visualizzazione</a>
+della configurazione di <b>Cisco 1600</b>.</li>
+</ul>
+&Egrave; possibile anche visualizzare la tabella di routing dei vari router:
+<a href="AN1_routingTable.txt">AN1</a>,
+<a href="AN2_routingTable.txt">AN2</a>,
+<a href="2503a_routingTable.txt">2503a</a>,
+<a href="2503b_routingTable.txt">2503b</a>,
+<a href="2503c_routingTable.txt">2503c</a>,
+<a href="1600_routingTable.txt">1600</a>.
+<br>Inoltre abbiamo realizzato alcune catture di pacchetti sulle reti locali
+con un analizzatore di protocollo Sniffer della Network General:
+<ul>
+<li>
+messaggio <a href="updateAN1V2.txt">routing update</a> RIPv2 generato da
+AN1 sulla propria rete locale;</li>
+
+
+<li>
+messaggi <a href="updateBCv1.txt">routing update</a> RIPv1 generati da
+2503b e 2503c sulla rete locale su cui sono collegati;</li>
+
+
+<li>
+messaggi <a href="update2503aV2.txt">routing update</a> RIPv2 generati
+da 2503a sulla propria rete locale;</li>
+
+
+<li>
+messaggi <a href="update1600-AN2V2.txt">routing update</a> RIPv2 generati
+da AN2 e 1600 sulla rete locale su cui sono collegati.</li>
+</ul>
+
+
+</body>
+</html>

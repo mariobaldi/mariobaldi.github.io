@@ -1,0 +1,1530 @@
+- - - - - - - - - - - - - - - - Frame 1 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+M    1            [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 2 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+     2    7.2849  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 3 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+     3    2.7153  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 4 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+     4    7.2851  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 5 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+     5    2.7150  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 6 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+     6    7.2854  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 7 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+     7    2.7149  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 8 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+     8    7.2855  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 9 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+     9    2.7147  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 10 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    10    7.2856  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 11 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    11    2.7145  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 12 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    12    7.3214  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 13 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    13    2.6788  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 14 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    14    6.4497  [224.0.0.5]     [192.168.65.7]   OSPF  Link State Update ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 4 (Link State Update),   Length = 88
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = 905A (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Number of Advertisements = 1
+OSPF:  Link State Advertisment # 1
+OSPF:  Link state age        = 1 (seconds)
+OSPF:  Optional capabilities = X2
+OSPF:              .... .0.. = no multicast capability
+OSPF:              .... ..1. = external routing capability
+OSPF:              .... ...0 = no Type of Service routing capability
+OSPF:  Link state type       = 1 (Router links)
+OSPF:  Link state ID         = [192.168.67.3]
+OSPF:  Advertising Router    = [192.168.67.3]
+OSPF:  Sequence number       = 2147483963,   Checksum = CC51
+OSPF:  Length                = 60
+OSPF:  Router type flags      = 02
+OSPF:               .... 0... = Not a wild-card multicast receiver
+OSPF:               .... .0.. = Not endpoint of active virtual link
+OSPF:               .... ..1. = AS boundary router
+OSPF:               .... ...0 = Non Area border router
+OSPF:  Reserved               = 0 
+OSPF:  Number of router links = 3
+OSPF:    Link ID               = [192.168.67.0] (IP network/subnet number)
+OSPF:    Link Data             = [255.255.255.0]
+OSPF:    Link type             = 3 (Connection to a stub network)
+OSPF:    Number of TOS metrics = 0,   TOS 0 metric = 64
+OSPF:  
+OSPF:    Link ID               = [192.168.66.0] (IP network/subnet number)
+OSPF:    Link Data             = [255.255.255.0]
+OSPF:    Link type             = 3 (Connection to a stub network)
+OSPF:    Number of TOS metrics = 0,   TOS 0 metric = 64
+OSPF:  
+OSPF:    Link ID               = [192.168.66.7] (Neigboring router's Router ID)
+OSPF:    Link Data             = [192.168.66.3]
+OSPF:    Link type             = 1 (Point-to-point connection to another router)
+OSPF:    Number of TOS metrics = 0,   TOS 0 metric = 64
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 15 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    15    0.8723  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 16 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    16    1.6328  [224.0.0.5]     [192.168.65.2]   OSPF  Link State Acknowledgment ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 5 (Link State Acknowledgment),   Length = 44
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = A4FE (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Link State Advertisement Header # 1 
+OSPF:  Link state age        = 1 (seconds)
+OSPF:  Optional capabilities = X2
+OSPF:              .... .0.. = no multicast capability
+OSPF:              .... ..1. = external routing capability
+OSPF:              .... ...0 = no Type of Service routing capability
+OSPF:  Link state type       = 1 (Router links)
+OSPF:  Link state ID         = [192.168.67.3]
+OSPF:  Advertising Router    = [192.168.67.3]
+OSPF:  Sequence number       = 2147483963,   Checksum = CC51
+OSPF:  Length                = 60
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 17 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    17    1.0454  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 18 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    18    7.3222  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 19 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    19    2.6781  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 20 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    20    7.3223  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 21 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    21    2.6779  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 22 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    22    7.3225  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 23 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    23    2.6778  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 24 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    24    2.4689  [224.0.0.5]     [192.168.65.7]   OSPF  Link State Update ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 4 (Link State Update),   Length = 176
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = 53EC (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Number of Advertisements = 3
+OSPF:  Link State Advertisment # 1
+OSPF:  Link state age        = 1 (seconds)
+OSPF:  Optional capabilities = X2
+OSPF:              .... .0.. = no multicast capability
+OSPF:              .... ..1. = external routing capability
+OSPF:              .... ...0 = no Type of Service routing capability
+OSPF:  Link state type       = 1 (Router links)
+OSPF:  Link state ID         = [192.168.67.3]
+OSPF:  Advertising Router    = [192.168.67.3]
+OSPF:  Sequence number       = 2147483964,   Checksum = B7B6
+OSPF:  Length                = 72
+OSPF:  Router type flags      = 02
+OSPF:               .... 0... = Not a wild-card multicast receiver
+OSPF:               .... .0.. = Not endpoint of active virtual link
+OSPF:               .... ..1. = AS boundary router
+OSPF:               .... ...0 = Non Area border router
+OSPF:  Reserved               = 0 
+OSPF:  Number of router links = 4
+OSPF:    Link ID               = [192.168.67.0] (IP network/subnet number)
+OSPF:    Link Data             = [255.255.255.0]
+OSPF:    Link type             = 3 (Connection to a stub network)
+OSPF:    Number of TOS metrics = 0,   TOS 0 metric = 64
+OSPF:  
+OSPF:    Link ID               = [192.168.67.4] (Neigboring router's Router ID)
+OSPF:    Link Data             = [192.168.67.3]
+OSPF:    Link type             = 1 (Point-to-point connection to another router)
+OSPF:    Number of TOS metrics = 0,   TOS 0 metric = 64
+OSPF:  
+OSPF:    Link ID               = [192.168.66.0] (IP network/subnet number)
+OSPF:    Link Data             = [255.255.255.0]
+OSPF:    Link type             = 3 (Connection to a stub network)
+OSPF:    Number of TOS metrics = 0,   TOS 0 metric = 64
+OSPF:  
+OSPF:    Link ID               = [192.168.66.7] (Neigboring router's Router ID)
+OSPF:    Link Data             = [192.168.66.3]
+OSPF:    Link type             = 1 (Point-to-point connection to another router)
+OSPF:    Number of TOS metrics = 0,   TOS 0 metric = 64
+OSPF:  
+OSPF:  Link State Advertisment # 2
+OSPF:  Link state age        = 38 (seconds)
+OSPF:  Optional capabilities = X2
+OSPF:              .... .0.. = no multicast capability
+OSPF:              .... ..1. = external routing capability
+OSPF:              .... ...0 = no Type of Service routing capability
+OSPF:  Link state type       = 4 (Summary link (AS boundary router))
+OSPF:  Link state ID         = [192.168.67.3]
+OSPF:  Advertising Router    = [192.168.64.9]
+OSPF:  Sequence number       = 2147483649,   Checksum = 2D22
+OSPF:  Length                = 28
+OSPF:  Network mask    = [0.0.0.0]
+OSPF:  Type of Service = 0 (Normal service),   Metric = 138 
+OSPF:  
+OSPF:  Link State Advertisment # 3
+OSPF:  Link state age        = 42 (seconds)
+OSPF:  Optional capabilities = X2
+OSPF:              .... .0.. = no multicast capability
+OSPF:              .... ..1. = external routing capability
+OSPF:              .... ...0 = no Type of Service routing capability
+OSPF:  Link state type       = 1 (Router links)
+OSPF:  Link state ID         = [192.168.67.4]
+OSPF:  Advertising Router    = [192.168.67.4]
+OSPF:  Sequence number       = 2147483963,   Checksum = DF70
+OSPF:  Length                = 48
+OSPF:  Router type flags      = 00
+OSPF:               .... 0... = Not a wild-card multicast receiver
+OSPF:               .... .0.. = Not endpoint of active virtual link
+OSPF:               .... ..0. = Non AS boundary router
+OSPF:               .... ...0 = Non Area border router
+OSPF:  Reserved               = 0 
+OSPF:  Number of router links = 2
+OSPF:    Link ID               = [192.168.67.0] (IP network/subnet number)
+OSPF:    Link Data             = [255.255.255.0]
+OSPF:    Link type             = 3 (Connection to a stub network)
+OSPF:    Number of TOS metrics = 0,   TOS 0 metric = 64
+OSPF:  
+OSPF:    Link ID               = [192.168.64.9] (IP address of Designated Router)
+OSPF:    Link Data             = [192.168.64.4]
+OSPF:    Link type             = 2 (Connection to a transit network)
+OSPF:    Number of TOS metrics = 0,   TOS 0 metric = 10
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 25 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    25    2.5073  [224.0.0.5]     [192.168.65.2]   OSPF  Link State Acknowledgment ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 5 (Link State Acknowledgment),   Length = 84
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = 7B3B (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Link State Advertisement Header # 1 
+OSPF:  Link state age        = 1 (seconds)
+OSPF:  Optional capabilities = X2
+OSPF:              .... .0.. = no multicast capability
+OSPF:              .... ..1. = external routing capability
+OSPF:              .... ...0 = no Type of Service routing capability
+OSPF:  Link state type       = 1 (Router links)
+OSPF:  Link state ID         = [192.168.67.3]
+OSPF:  Advertising Router    = [192.168.67.3]
+OSPF:  Sequence number       = 2147483964,   Checksum = B7B6
+OSPF:  Length                = 72
+OSPF:  
+OSPF:  Link State Advertisement Header # 2 
+OSPF:  Link state age        = 38 (seconds)
+OSPF:  Optional capabilities = X2
+OSPF:              .... .0.. = no multicast capability
+OSPF:              .... ..1. = external routing capability
+OSPF:              .... ...0 = no Type of Service routing capability
+OSPF:  Link state type       = 4 (Summary link (AS boundary router))
+OSPF:  Link state ID         = [192.168.67.3]
+OSPF:  Advertising Router    = [192.168.64.9]
+OSPF:  Sequence number       = 2147483649,   Checksum = 2D22
+OSPF:  Length                = 28
+OSPF:  
+OSPF:  Link State Advertisement Header # 3 
+OSPF:  Link state age        = 42 (seconds)
+OSPF:  Optional capabilities = X2
+OSPF:              .... .0.. = no multicast capability
+OSPF:              .... ..1. = external routing capability
+OSPF:              .... ...0 = no Type of Service routing capability
+OSPF:  Link state type       = 1 (Router links)
+OSPF:  Link state ID         = [192.168.67.4]
+OSPF:  Advertising Router    = [192.168.67.4]
+OSPF:  Sequence number       = 2147483963,   Checksum = DF70
+OSPF:  Length                = 48
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 26 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    26    2.3465  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 27 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    27    2.6775  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 28 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    28    1.1247  [224.0.0.5]     [192.168.65.7]   OSPF  Link State Update ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 4 (Link State Update),   Length = 88
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = 4C96 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Number of Advertisements = 1
+OSPF:  Link State Advertisment # 1
+OSPF:  Link state age        = 9 (seconds)
+OSPF:  Optional capabilities = X2
+OSPF:              .... .0.. = no multicast capability
+OSPF:              .... ..1. = external routing capability
+OSPF:              .... ...0 = no Type of Service routing capability
+OSPF:  Link state type       = 1 (Router links)
+OSPF:  Link state ID         = [192.168.67.4]
+OSPF:  Advertising Router    = [192.168.67.4]
+OSPF:  Sequence number       = 2147483964,   Checksum = 118F
+OSPF:  Length                = 60
+OSPF:  Router type flags      = 00
+OSPF:               .... 0... = Not a wild-card multicast receiver
+OSPF:               .... .0.. = Not endpoint of active virtual link
+OSPF:               .... ..0. = Non AS boundary router
+OSPF:               .... ...0 = Non Area border router
+OSPF:  Reserved               = 0 
+OSPF:  Number of router links = 3
+OSPF:    Link ID               = [192.168.67.0] (IP network/subnet number)
+OSPF:    Link Data             = [255.255.255.0]
+OSPF:    Link type             = 3 (Connection to a stub network)
+OSPF:    Number of TOS metrics = 0,   TOS 0 metric = 64
+OSPF:  
+OSPF:    Link ID               = [192.168.67.3] (Neigboring router's Router ID)
+OSPF:    Link Data             = [192.168.67.4]
+OSPF:    Link type             = 1 (Point-to-point connection to another router)
+OSPF:    Number of TOS metrics = 0,   TOS 0 metric = 64
+OSPF:  
+OSPF:    Link ID               = [192.168.64.9] (IP address of Designated Router)
+OSPF:    Link Data             = [192.168.64.4]
+OSPF:    Link type             = 2 (Connection to a transit network)
+OSPF:    Number of TOS metrics = 0,   TOS 0 metric = 10
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 29 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    29    2.5029  [224.0.0.5]     [192.168.65.2]   OSPF  Link State Acknowledgment ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 5 (Link State Acknowledgment),   Length = 44
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = 5FB6 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Link State Advertisement Header # 1 
+OSPF:  Link state age        = 9 (seconds)
+OSPF:  Optional capabilities = X2
+OSPF:              .... .0.. = no multicast capability
+OSPF:              .... ..1. = external routing capability
+OSPF:              .... ...0 = no Type of Service routing capability
+OSPF:  Link state type       = 1 (Router links)
+OSPF:  Link state ID         = [192.168.67.4]
+OSPF:  Advertising Router    = [192.168.67.4]
+OSPF:  Sequence number       = 2147483964,   Checksum = 118F
+OSPF:  Length                = 60
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 30 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    30    3.7309  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 31 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    31    0.0662  [224.0.0.5]     [192.168.65.7]   OSPF  Link State Update ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 4 (Link State Update),   Length = 56
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = 8469 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Number of Advertisements = 1
+OSPF:  Link State Advertisment # 1
+OSPF:  Link state age        = 3600 (seconds)
+OSPF:  Optional capabilities = X2
+OSPF:              .... .0.. = no multicast capability
+OSPF:              .... ..1. = external routing capability
+OSPF:              .... ...0 = no Type of Service routing capability
+OSPF:  Link state type       = 4 (Summary link (AS boundary router))
+OSPF:  Link state ID         = [192.168.67.3]
+OSPF:  Advertising Router    = [192.168.64.9]
+OSPF:  Sequence number       = 2147483650,   Checksum = C117
+OSPF:  Length                = 28
+OSPF:  Network mask    = [0.0.0.0]
+OSPF:  Type of Service = 0 (Normal service),   Metric = 16777215 
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 32 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    32    2.5028  [224.0.0.5]     [192.168.65.2]   OSPF  Link State Acknowledgment ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 5 (Link State Acknowledgment),   Length = 44
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = 8679 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Link State Advertisement Header # 1 
+OSPF:  Link state age        = 3600 (seconds)
+OSPF:  Optional capabilities = X2
+OSPF:              .... .0.. = no multicast capability
+OSPF:              .... ..1. = external routing capability
+OSPF:              .... ...0 = no Type of Service routing capability
+OSPF:  Link state type       = 4 (Summary link (AS boundary router))
+OSPF:  Link state ID         = [192.168.67.3]
+OSPF:  Advertising Router    = [192.168.64.9]
+OSPF:  Sequence number       = 2147483650,   Checksum = C117
+OSPF:  Length                = 28
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 33 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    33    0.0728  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 34 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    34    7.3590  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 35 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    35    2.6412  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 36 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    36    7.3592  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 37 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    37    2.6410  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 38 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    38    7.3593  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 39 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    39    2.6409  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 40 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    40    7.3595  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 41 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    41    2.6406  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 42 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    42    7.3597  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 43 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    43    2.6405  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 44 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    44    7.3953  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 45 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    45    2.6048  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 46 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    46    7.3961  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 47 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    47    2.6042  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 48 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    48    7.3962  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 49 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    49    2.6040  [224.0.0.5]     [192.168.65.7]   OSPF  Hello ID=[192.168.66.7] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.66.7]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.65.2]
+OSPF:  
+
+
+- - - - - - - - - - - - - - - - Frame 50 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+    50    7.3964  [224.0.0.5]     [192.168.65.2]   OSPF  Hello ID=[192.168.65.2] 
+
+OSPF:  ----- OSPF Header -----
+OSPF:  
+OSPF:  Version = 2,   Type = 1 (Hello),   Length = 48
+OSPF:  Router ID       = [192.168.65.2]
+OSPF:  Area ID         = [0.0.0.2]
+OSPF:  Header checksum = F4E2 (correct)
+OSPF:  Authentication: Type = 0 (No Authentication),   Value = 00 00 00 00 00 00 00 00
+OSPF:  
+OSPF:  Network mask             = [255.255.255.0]
+OSPF:  Hello interval           = 10 (seconds)
+OSPF:  Optional capabilities    = X2
+OSPF:                 .... 0... = router is not NSSA capable
+OSPF:                 .... .0.. = no multicast capability
+OSPF:                 .... ..1. = external routing capability
+OSPF:                 .... ...0 = no Type of Service routing capability
+OSPF:  Router priority          = 1
+OSPF:  Router dead interval     = 40 (seconds)
+OSPF:  Designated router        = [192.168.65.2]
+OSPF:  Backup designated router = [192.168.65.7]
+OSPF:  Neighbor (1)             = [192.168.66.7]
+OSPF:  

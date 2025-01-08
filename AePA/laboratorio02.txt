@@ -1,0 +1,99 @@
+Laurea in Ingegneria Informativa
+Corso di Algoritmi e Programmazione Avanzata - 01EIP 
+Anno Accademico 2001-2002
+Esercizi Proposti per il Laboratorio
+ 
+Esercitazione di laboratorio numero 2
+-------------------------------------
+
+ 
+ 
+Esercizio 1
+-----------
+
+Tour del Cavaliere
+
+Data una scacchiera di dimensione n*n, un cavallo viene posizionato nella
+casella di coordinate (x, y).
+Considerando che il cavallo possa muoversi sulla scacchiera seguendo le
+regole degli scacchi, scrivere un programma in linguaggio C che faccia
+effettuare al cavallo un insieme di mosse tali da fargli percorrere tutte
+le caselle della scacchiera una e una sola volta.
+
+Si proponga una soluzione ricorsiva.
+Come e` possibile trasformare tale soluzione in un algoritmo iterativo?
+
+Si ricorda che nel gioco degli scacchi un cavallo si muove con "balzi" a
+L, ovvero data una posizione di partenza x, in figura, puo' raggiungere con
+una sola mossa le otto caselle denominate y:
+
+#######
+##y#y##
+#y###y#
+###x###
+#y###y#
+##y#y##
+#######
+
+
+
+
+Esercizio 2
+-----------
+
+Concatenazione di stringhe.
+
+Sia dato un insieme di parole di lunghezza arbitraria.
+Tali parole siano codificate, una per riga, su di un file nella cui prima
+riga sia specificato il numero di parole presenti di seguito.
+Scrivere un programma C che determini la lunghezza della stringa piu' lunga 
+realizzabile utilizzando le seguenti regole:
+* ciascuna parola puo` essere usata al piu` n volte, con n specificato in
+  ingresso
+* tutte le parole sono stringhe
+* due stringhe sa e sb sono concatenabili se l'ultima coppia di caratteri
+  di sa coincide con la prima coppia di caratteri di sb
+* la concatenazione si ottiene sovrapponendo tali coppie di caratteri
+  (Esempio sa = "giorno", sb = "notte"; sa concatenato sb = "giornotte")
+* l'ordine con cui le parole compaiono nel file non e` vincolante per la
+  generazione della stringa di lunghezza massima.
+
+Esempio.
+Supponendo un valore di n pari a 2
+
+<input file>
+9
+novara
+torino
+vercelli
+ravenna
+napoli
+livorno
+messina
+noviligure
+roma
+
+
+
+
+Variante:
+Modificare il programma precedente in modo che esso individui il sottoinsieme 
+di parole che consente di generare la stringa di lunghezza massima
+
+Il programma deve stampare su standard output le parole appartenenti al
+sottoinsieme determinato nell'ordine di concatenazione nonche' la stringa
+piu` lunga trovata. 
+
+Esempio.
+Supponendo lo stesso file di ingresso e un valore di n pari a 2
+
+<standard output>
+torino
+novara
+ravenna
+napoli
+livorno
+noviligure
+
+La stringa piu` lunga ottenibile e':
+"torinovaravennapolivornovaravennapolivornoviligure"

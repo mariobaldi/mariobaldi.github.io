@@ -1,0 +1,119 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.51 [en] (Win95; I) [Netscape]">
+   <meta name="Author" content="Mario Baldi e Pietro Nicoletti">
+   <title>Internetworking: progetto del routing statico</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#6600FF" vlink="#CC3399" alink="#FF0000">
+&nbsp;
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td><img SRC="small.gif" ALT="Immagine della copertina del libro" BORDER=0 height=178 width=196 align=LEFT></td>
+
+<td>
+<center>
+<h1>
+<i>Inter</i><font face="Arial">net</font><i>working</i></h1></center>
+
+<center><font size=+2>Mario Baldi e Pietro Nicoletti</font></center>
+
+<p><br></td>
+</tr>
+</table>
+
+<center>
+<h1>
+OSPF</h1></center>
+I router sono stati configurati secondo la divisione in aree mostrata in
+figura.
+<center>
+<p><a href="aree.gif"><img SRC="areeSmall.gif" ALT="Suddivisione in aree OSPF sulla rete di laboratorio" height=383 width=575></a></center>
+
+<p>Sono disponibili una serie di informazioni riguardanti i vari router:
+<ul>
+<li>
+la configurazione: Cisco <a href="2503a.txt">2503a</a>, <a href="2503b.txt">2503b</a>,
+<a href="2503c.txt">2503c</a>,
+BayNetworks <a href="AN1.txt">AN1</a> e
+<a href="AN2.txt">AN2</a>;</li>
+
+<li>
+la tabella di routing: Cisco <a href="2503aRT.txt">2503a</a>, <a href="2503bRT.txt">2503b</a>,
+BayNetworks <a href="AN1RT.txt">AN1</a> e <a href="AN2RT.txt">AN2</a>;</li>
+
+<li>
+la base dati dei link state advertisement: Cisco <a href="2503bLSDB.txt">2503b</a>,
+BayNetworks <a href="AN1LSDB.txt">AN1</a>.</li>
+</ul>
+Abbiamo realizzato alcune catture di pacchetti sulla rete locale tra i
+Cisco 2503b e 2503c con un analizzatore di protocollo Sniffer della Network
+General:
+<ul>
+<li>
+scambio di messaggi <a href="helloBC.txt">hello</a>;</li>
+
+<li>
+scambio di messaggi <a href="LSAupdateBC.txt">link state update e link
+state acknowledgment</a>;</li>
+
+<li>
+sincronizzazione delle basi dati mediante messaggi <a href="DD_BC.txt">database
+description</a>;</li>
+
+<li>
+ulteriori scambi di messaggi: <a href="exchangeBC1.txt">prima</a>, <a href="helloDD-BC.txt">seconda</a>
+e <a href="exchangeBC2.txt">terza</a> cattura.</li>
+</ul>
+Abbiamo inoltre realizzato altre configurazioni del dominio di routing
+OSPF.
+<ul>
+<li>
+Aggregazione delle destinazioni della backbone area e dell'area 2:</li>
+
+<ul>
+<li>
+base di dati dei link state advertisement di <a href="AN1_LSDB_aggr.txt">AN1</a>,</li>
+
+<li>
+base di dati dei link state advertisement di <a href="2503b_LSDB_aggr.txt">2503b</a>,</li>
+
+<li>
+<a href="2503b_LSA3_aggr.txt">dettaglio</a> dei link state advertisement
+di tipo 3 inviati nella backbone area per annunciare le destinazioni dell'area
+2.</li>
+</ul>
+
+<li>
+Dichiarazione dell'area 1 come stub area:</li>
+
+<ul>
+<li>
+<a href="2503a_stub_cmd.txt">impostazione</a> e <a href="2503a_stub_cfg.txt">visualizzazione</a>
+della configurazione di 2503a,</li>
+
+<li>
+visualizzazione della base di dati dei link state advertisement di <a href="2503a_stub_LSDB.txt">2503a</a>.</li>
+</ul>
+
+<li>
+Inibizione dell'invio di link state advertisement di tipo 3 (summary LSA)
+nell'area 1 dichiarata stub area:</li>
+
+<ul>
+<li>
+<a href="2503a_noSumm_cmd.txt">impostazione</a> e <a href="2503a_noSumm_cfg.txt">visualizzazione</a>
+della configurazione di 2503a,</li>
+
+<li>
+visualizzazione della base di dati dei link state advertisement di <a href="2503a_noSumm_LSDB.txt">2503a</a>.</li>
+</ul>
+
+<li>
+Creazione di un <a href="VirtualLink">virtual link</a> attraverso l'area
+2 per rendere AN1 area border router e definire l'area 3.</li>
+</ul>
+
+</body>
+</html>

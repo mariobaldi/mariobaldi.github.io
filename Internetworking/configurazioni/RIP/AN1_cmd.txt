@@ -1,0 +1,38 @@
+bcc> config
+Reading configuration information, please wait . . . done.
+box# ethernet slot 1 connector 1
+ethernet/1/1# ip address 192.168.16.3 mask 255.255.255.0
+ip/192.168.16.3/255.255.255.0# rip
+rip/192.168.16.3# version rip2
+rip/192.168.16.3# timeout-timer 180
+rip/192.168.16.3# holddown-timer 120
+rip/192.168.16.3# triggered-updates enabled
+rip/192.168.16.3# back
+ip/192.168.16.3/255.255.255.0# back
+ethernet/1/1# back
+box# serial slot 1 connector 1
+serial/1/1# ppp
+ppp/1/1# ip address 192.168.66.3 mask 255.255.255.0
+ip/192.168.66.3/255.255.255.0# address-resolution none
+ip/192.168.66.3/255.255.255.0# rip
+rip/192.168.66.3# timeout-timer 180
+rip/192.168.66.3# holddown-timer 120
+rip/192.168.66.3# triggered-updates enabled
+rip/192.168.66.3# back
+ip/192.168.66.3/255.255.255.0# back
+ppp/1/1# back
+serial/1/1# back
+box# serial slot 1 connector 2
+serial/1/2# ppp
+ppp/1/2# ip address 192.168.67.3 mask 255.255.255.0
+ip/192.168.67.3/255.255.255.0# address-resolution none
+ip/192.168.67.3/255.255.255.0# rip
+rip/192.168.67.3# version rip2
+rip/192.168.67.3# timeout-timer 180
+rip/192.168.67.3# holddown-timer 120
+rip/192.168.67.3# triggered-update enabled
+rip/192.168.67.3# back
+ip/192.168.67.3/255.255.255.0# back
+ppp/1/2# back
+serial/1/2# back
+box#

@@ -1,0 +1,5 @@
+Per creare il programma copiare o rinominare, a scelta, in dato.*
+ - dato_int.* (per liste di interi)
+ - dato_str.( (per liste di stringhe)
+
+compilare separatamente i .c e unire in fase di link.

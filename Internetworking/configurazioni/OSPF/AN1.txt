@@ -1,0 +1,88 @@
+box 
+  board slot 1 
+      type ansedsti2 
+  back
+  snmp 
+    community label public 
+        access read-write 
+      manager address 0.0.0.0 
+      back
+    back
+  back
+  tftp 
+      default-volume 1 
+  back
+  console portnum 1 
+      prompt {[%slot%:1]$ } 
+      auto-manager-script automgr.bat 
+      auto-user-script autouser.bat 
+  back
+  telnet 
+    client 
+    back
+    server 
+        prompt {[%slot%:AN1]$ }                                                  
+        auto-user-script autouser.bat 
+    back
+  back
+  ethernet slot 1 connector 1 
+      circuit-name AN1-E11 
+    ip address 192.168.16.3 mask 255.255.255.0 
+      arp 
+      back
+    back
+  back
+  serial slot 1 connector 1 
+      circuit-name AN1-S11 
+      bofl disabled 
+      promiscuous enabled 
+      service transparent 
+      wan-protocol ppp 
+    ppp 
+      line 
+      back
+      ip address 192.168.66.3 mask 255.255.255.0 
+          address-resolution none 
+        ospf area 0.0.0.2 
+          type pointtopoint
+	  metric 64
+	back                                                                    
+        arp 
+        back
+      back
+    back
+  back
+  serial slot 1 connector 2 
+      circuit-name AN1-S12 
+      bofl disabled 
+      promiscuous enabled 
+      service transparent 
+      wan-protocol ppp 
+    ppp 
+      line 
+      back
+      ip address 192.168.67.3 mask 255.255.255.0 
+          address-resolution none 
+        ospf area 0.0.0.2 
+	  type pointtopoint
+	  metric 64
+        back
+        arp 
+        back
+      back
+    back
+  back                                                                          
+  ip 
+    arp 
+    back
+    ospf router-id 192.168.67.3 
+        as-boundary-router true
+      area area-id 0.0.0.2 
+      back
+    back
+    rip 
+    back
+    tcp 
+    back
+  back
+back

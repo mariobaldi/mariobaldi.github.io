@@ -1,0 +1,103 @@
+box# show configuration
+box
+  board slot 1
+      type ansedsti2
+  back
+  snmp
+    community label public
+        access read-write
+      manager address 0.0.0.0
+      back
+    back
+  back
+  tftp
+      default-volume 1
+  back
+  console portnum 1
+      prompt {[%slot%:1]$ }
+      auto-manager-script automgr.bat
+      auto-user-script autouser.bat
+  back
+  telnet
+    client
+    back
+    server
+        prompt {[%slot%:TN]$ }
+        auto-user-script autouser.bat
+    back
+  back
+  ethernet slot 1 connector 1
+      circuit-name AN1-E11
+    ip address 192.168.16.3 mask 255.255.255.0
+      arp
+      back
+      ospf area 0.0.0.3
+          metric 10
+      back
+    back
+  back
+  serial slot 1 connector 1
+      circuit-name AN1-S11
+      bofl disabled
+      promiscuous enabled
+      service transparent
+      wan-protocol ppp
+    ppp
+      line
+      back
+      ip address 192.168.66.3 mask 255.255.255.0
+          address-resolution none
+        ospf area 0.0.0.2
+            type pointtopoint
+            metric 64
+        back
+        arp
+        back
+      back
+    back
+  back
+  serial slot 1 connector 2
+      circuit-name AN1-S12
+      bofl disabled
+      promiscuous enabled
+      service transparent
+      wan-protocol ppp
+    ppp
+      line
+      back
+      ip address 192.168.67.3 mask 255.255.255.0
+          address-resolution none
+        ospf area 0.0.0.2
+            type pointtopoint
+            metric 64
+        back
+        arp
+        back
+      back
+    back
+  back
+  ip
+    arp
+    back
+    ospf router-id 192.168.67.3
+        slot-mask {1 2 3 4 5 6 7 8 9 10 11 12 13 14}
+      area area-id 0.0.0.0
+        summary network 192.168.0.0
+            mask 255.255.252.0
+        back
+      back
+      area area-id 0.0.0.2
+        summary network 192.168.64.0
+            mask 255.255.252.0
+        back
+      back
+      area area-id 0.0.0.3
+          stub true
+      back
+    back
+    rip
+    back
+    tcp
+    back
+  back
+back

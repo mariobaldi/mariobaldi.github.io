@@ -1,0 +1,9 @@
+2503a(config)#router rip
+2503a(config-router)#version 2
+2503a(config-router)#network 192.168.1.0
+2503a(config-router)#network 192.168.3.0
+2503a(config-router)#network 192.168.128.0
+2503a(config-router)#passive-interface BRI0
+2503a(config-router)#timers basic 30 180 120 300
+2503a(config-router)#exit
+2503a(config)#exit

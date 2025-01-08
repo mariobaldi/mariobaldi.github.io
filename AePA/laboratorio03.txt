@@ -1,0 +1,61 @@
+Laurea in Ingegneria Informativa
+Corso di Algoritmi e Programmazione Avanzata - 01EIP
+Anno Accademico 2001-2002
+Esercizi Proposti per il Laboratorio
+ 
+Esercitazione di laboratorio numero 3
+-------------------------------------
+
+
+
+In questa esercitazione tutti i programmi richiesti devono essere costituiti
+da almeno due moduli: il primo contenente il main, il secondo contenente le
+varie funzioni.
+
+
+
+Esercizio 1
+-----------
+
+Una tecnica per rappresentare matrici di grosse dimensioni in cui la maggior
+parte degli elementi sia di valore nullo e` costituita dal metodo della
+matrice sparsa, che consiste nel memorizzare solamente valore e posizione
+(indici di riga e di colonna) degli elementi non nulli.
+
+Si consideri in particolare la seguente modalita` di memorizzazione:
+* tutti gli elementi non nulli di ogni riga della matrice siano memorizzati
+  (insieme all'indice di colonna) in una lista "orizzontale" (una lista per
+  ogni riga) in ordine crescente di colonna
+* i puntatori di testa delle liste cosi` ottenute (solo le liste non nulle)
+  siano inseriti (insieme all'indice di riga) in una lista "verticale" in
+  ordine crescente di riga, in modo da ottenere una lista di liste
+* il puntatore di testa della lista verticale e` memorizzato, insieme alle
+  dimensioni orizzontale e verticale della matrice in una apposita struttura
+  che descrive la matrice.
+
+Si realizzi quanto segue:
+1. Si realizzi una struttura dati opportuna in C per memorizzare una matrice
+   di interi nel formato descritto.
+2. Si implementi una funzione in grado di leggere una matrice da un file di
+   testo. Ogni riga del file contiene una terna di numeri
+   <valore> <indiceRiga> <indiceColonna>
+   corrispondenti ad un elemento non nullo della matrice. La prima riga del 
+   file contiene il numero totale di righe e di colonne della matrice.
+3. Si implementi una funzione in grado di stampare la matrice su video (o
+   su file) in forma convenzionale.
+4. Si implementi una funzione che, a partire da due matrici A e B memorizzate
+   entrambe in tale formato, calcoli la matrice C (memorizzata nello stesso
+   formato) ottenuta come somma fra la matrice A e la matrice B.
+
+
+ 
+Esercizio 2
+-----------
+
+Si implementino le operazioni di:
+* inserzione
+* ricerca
+su Binary Search Tree in modo iterativo.
+
+
+

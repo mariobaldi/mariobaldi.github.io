@@ -1,0 +1,54 @@
+Current configuration:
+!
+version 11.0
+service udp-small-servers
+service tcp-small-servers
+!
+hostname 2503c
+!
+enable password libro
+!
+!
+interface Ethernet0
+ ip address 192.168.65.7 255.255.255.0
+ no ip mroute-cache
+ no ip route-cache
+!
+interface Serial0
+ ip address 192.168.66.7 255.255.255.0
+ no ip mroute-cache
+ encapsulation ppp
+ no ip route-cache
+ no fair-queue
+!
+interface Serial1
+ no ip address
+ no ip mroute-cache
+ no ip route-cache
+ shutdown
+!
+interface BRI0
+ ip address 192.168.196.7 255.255.255.0
+ no ip mroute-cache
+ no ip route-cache
+ shutdown
+!
+router rip
+ timers basic 30 180 120 300
+ passive-interface BRI0
+ network 192.168.65.0
+ network 192.168.66.0
+!
+!
+line con 0
+line aux 0
+ transport input all
+line vty 0
+ password libro
+ login
+ length 25
+line vty 1 4
+ password libro
+ login
+!
+end

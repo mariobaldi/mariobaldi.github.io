@@ -1,0 +1,39 @@
+Current configuration:
+!
+version 11.2
+no service udp-small-servers
+no service tcp-small-servers
+!
+hostname 2503a
+!
+enable password libro
+!
+ip subnet-zero
+!
+interface Ethernet0
+ ip address 192.168.128.1 255.255.255.0
+!
+interface Serial0
+ ip address 192.168.1.1 255.255.255.0
+ clock rate 2000000
+!
+interface Serial1
+ ip address 192.168.3.1 255.255.255.0
+!
+interface BRI0
+ ip address 192.168.196.1 255.255.255.0
+!
+router ospf 1
+ network 192.168.128.0 0.0.0.255 area 1
+ network 192.168.0.0 0.0.3.255 area 0
+!
+no ip classless
+ip route 130.192.5.189 255.255.255.255 Ethernet0
+!
+line con 0
+line aux 0
+line vty 0 4
+ password libro
+ login
+!
+end 

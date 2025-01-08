@@ -1,0 +1,6 @@
+1600#sho ip ospf neighbor
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+192.168.67.4      1   FULL/BDR        00:00:38    192.168.64.4    Ethernet0
+192.168.65.2      1   FULL/  -        00:00:30    192.168.2.2     Serial0
+192.168.196.1     1   FULL/  -        00:00:33    192.168.3.1     Serial1

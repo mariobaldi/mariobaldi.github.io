@@ -1,0 +1,15 @@
+3 2
+fondamenti di informatica
+1 xxx1 1
+LU 8:30-10:30
+analisi II
+2 xxx2 2
+LU 8:30-10:30
+LU 10:30-12:30
+Reti logiche
+4 xxx3 1
+LU 14:30-16:30
+aula1
+aula2
+
+

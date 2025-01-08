@@ -1,0 +1,42 @@
+1600#write termimal
+Building configuration...
+
+Current configuration:
+!
+version 11.2
+no service password-encryption
+no service udp-small-servers
+no service tcp-small-servers
+!
+hostname 1600
+!
+enable password libro
+!
+!
+interface Ethernet0
+ ip address 192.168.64.9 255.255.255.0
+!
+interface Serial0
+ ip address 192.168.2.9 255.255.255.0
+ no fair-queue
+ clockrate 2000000
+!
+interface Serial1
+ ip address 192.168.3.9 255.255.255.0
+ clockrate 2000000
+!
+router rip
+ version 2
+ timers basic 30 180 120 300
+ network 192.168.64.0
+ network 192.168.3.0
+ network 192.168.2.0
+!
+no ip classless
+!
+line con 0
+line vty 0 4
+ password libro
+ login
+!
+end

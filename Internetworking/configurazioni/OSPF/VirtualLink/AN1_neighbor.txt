@@ -1,0 +1,25 @@
+bcc> show ospf neighbors
+show ospf neighbors                                 Nov 12, 1998 05:30:56 [GMT]
+
+
+OSPF Dynamic Neighbors
+----------------------
+                                Neighbor
+IP Interface    Router ID       IP Address      State      Type
+--------------- --------------- --------------- ---------- ----------
+192.168.66.3    192.168.66.7    192.168.66.7    full       Dynamic
+192.168.67.3    192.168.67.4    192.168.67.4    full       Dynamic
+
+OSPF Configured Neighbors
+-------------------------
+                                Neighbor
+IP Interface    Router ID       IP Address      State      Type
+--------------- --------------- --------------- ---------- -----------
+No entries
+
+OSPF Virtual Neighbors
+----------------------
+                                Neighbor
+Area ID         Router ID       IP Address      State      Type
+--------------- --------------- --------------- ---------- ----------
+0.0.0.2         192.168.64.9    192.168.64.9    full       Virtual

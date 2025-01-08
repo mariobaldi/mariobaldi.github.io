@@ -1,0 +1,698 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  <meta name="Generator" content="Microsoft FrontPage 4.0">
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <title>Tutorial: Interactive Multimedia Networking</title>
+  <meta name="Template" content="C:\PROGRAM FILES\MICROSOFT OFFICE\OFFICE\html.dot">
+</head>
+
+
+<body style="font-family: Verdana; text-align: justify; font-weight: inherit;" bgproperties="fixed" alink="#ff0000" bgcolor="#ffffff" link="#0000ff" text="#000000" vlink="#800080">
+
+
+
+
+
+
+
+
+<table style="width: 100%;" border="0" cellspacing="0">
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+    <tr>
+
+
+
+
+
+
+  <td style="white-space: nowrap; vertical-align: top;">
+      
+      
+      
+      
+      
+      <h2>Mario Baldi</h2>
+
+
+
+
+
+
+  </td>
+
+
+
+
+
+
+  <td valign="middle" width="60">
+      
+      
+      
+      
+      
+      <p>&nbsp;</p>
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+      <td align="right" valign="middle" width="377">
+      
+      
+      
+      
+      
+      <div align="right"><a href="http://netgroup.polito.it"><img style="border: 0px solid ; width: 135px; height: 135px;" alt="" src="../images/logoNetGroup.png"></a></div>
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+<h1 style="text-align: center;">Interactive Multimedia Networking</h1>
+
+
+
+<h3>Outline</h3>
+
+
+
+<p>Applications that require real-time interaction among their users
+are gaining importance and diffusion as computer networks become
+increasingly powerful and ubiquitous. Many such applications impose
+very stringent requirements on the network; among the applications
+today widely deployed, videoconferencing is most demanding.</p>
+
+
+
+<p>In order for the participants in a videoconference call to interact
+naturally, the end-to-end delay should be below human perception; even
+though an objective and unique figure cannot be set, 100 ms is widely
+recognized as the desired one way delay requirement for interaction.
+Since the global propagation delay alone can be about 100 ms, the
+actual end-to-end delay budget available to the system designer
+(excluding propagation delay) is very limited (e.g., no more than 10
+ms). </p>
+
+
+
+<p>We identify the components of the end-to-end delay in various
+configurations with the objective of understanding how it can be kept
+below the desired 100 ms bound.</p>
+
+
+
+<p>After an overview of the distinctive features of interactive
+multimedia applications, their requirements on the network are
+discussed and limited delay and delay variation (Jitter) identified as
+the most demanding requirements. The most common techniques for
+controlling service quality are presented and the two major frameworks
+for their deployment within IP networks, i.e., Integrated Services
+(IntServ) and Differentiated Services (DiffServ), outlined. The
+tutorial also studies the implications of the architecture of packet
+switches on delay bounds.</p>
+
+
+
+<p>Then the tutorial delves into more detail by analyzing the
+end-to-end delay components of a videoconferencing system step-by-step,
+through six system configurations obtained by combining three generic
+network architectures with two video encoding schemes: the transmission
+of raw video and variable bit rate (VBR) MPEG video encoding over (i)
+circuit switching, (ii) synchronous packet switching, and (iii)
+asynchronous packet switching. </p>
+
+
+
+<p>Various queuing and scheduling algorithms for asynchronous and synchronous packet networks will be analyzed and compared. </p>
+
+
+
+<p>The tutorial finally shows that having a global common time
+reference, together with an innovative queuing and scheduling scheme
+called time-driven priority (TDP) and VBR MPEG video encoding, provides
+adequate end-to-end delay, which is </p>
+
+
+
+<ol>
+
+
+
+  <li>below 10 ms (excluding propagation delay), </li>
+
+
+
+  <li>independent of the network instant load, and </li>
+
+
+
+  <li>independent of the connection rate.</li>
+
+
+
+</ol>
+
+
+
+<p>The participants are expected to have basic knowledge on packet
+switching and the Internet Protocol Suite. Depending on the background
+of the audience on multimedia, the first part of the tutorial can be
+organized as a quick overview of the general context to which the
+remainder, or as an in-depth discussion.</p>
+
+
+
+<h3>Contents</h3>
+
+
+
+<ul>
+
+
+
+  <li>Multimedia networking: distinctive features and requirements of interactive multimedia applications</li>
+
+
+
+  <li>Analysis of delay components in multimedia communications systems</li>
+
+
+
+  <li>Controlling the network delay </li>
+
+
+
+</ul>
+
+
+
+<ul>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>statistical multiplexing and delay</li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>queuing and scheduling algoriths</li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>Fixed Priority</li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>Round Robin</li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>Class based queuing</li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>Weighted fair queuing</li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>Time driven priority</li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  <li>Switch architectures for controlled delay</li>
+
+
+
+  <li>Quality of service in the Internet </li>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>Integrated Services </li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>Differentiated Services </li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  <li>Encoding and transmission of MPEG video: a closer look </li>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>video over circuit switched networks</li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>video over asynchronous packet switching</li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>CBR video</li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>VBR video</li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+  
+  
+  
+  <ul>
+
+
+
+    <li>VBR video with time-driven priority</li>
+
+
+
+  
+  
+  
+  </ul>
+
+
+
+</ul>
+
+
+
+<h3>Course Material </h3>
+
+
+
+
+
+
+
+
+<ul>
+
+
+
+  <li><a href="interactiveMM_0.pdf">Introduction</a> (<a href="interactiveMM_0_bn.pdf">black&amp;white</a>
+    for printing)</li>
+
+
+
+    <li><a href="http://www.netscire.it/CourseMaterial/Multimedia&amp;QoS_E_A.pdf">First part</a>: multimedia
+    applications (<a href="http://www.netscire.it/CourseMaterial/Multimedia&amp;QoS_bw_E_A.pdf">black&amp;white</a>
+    for printing)</li>
+
+
+
+
+
+
+  
+  <li><a href="interactiveMM_2.pdf">Second part</a>: delay
+    analysis of videoconference&nbsp;(<a href="CourseMaterial/interactiveMM_2_2x.pdf">2
+    slides per page</a>)</li>
+
+
+
+  <li>M. Baldi, Y. Ofek, "<a href="../publications/ToN98a_gz.ps">End-to-end Delay Analysis of Videoconferencing over Packet Switched Networks</a>," <i>IEEE/ACM Transactions on Networking</i>, Vol. 8, No. 4, Aug. 2000, pp. 479-492.<a href="http://search.ieeexplore.ieee.org/search97/s97is.vts?action=View&amp;VdkVgwKey=865076&amp;DocOffset=4&amp;DocsFound=15&amp;QueryZip=%28Baldi+M%2E%3CIN%3Eau+%29&amp;SortField=pyr&amp;SortOrder=desc&amp;ViewTemplate=lpdocview%2Ehts&amp;SearchUrl=http%3A%2F%2Fsearch%2Eieeexplore%2Eieee%2Eorg%2Fsearch97%2Fs97is%2Evts%3Faction%3DSearch%26QueryZip%3D%2528Baldi%2BM%252E%253CIN%253Eau%2B%2529%26Filter%3Dfld%255Fsch%252Ehts%26ResultTemplate%3Dlpadv%255Fcrst%252Ehts%26QueryText%3D%2528Baldi%2BM%252E%253CIN%253Eau%2B%2529%26SortField%3Dpyr%26SortOrder%3Ddesc%26ViewTemplate%3Dlpdocview%252Ehts%26ResultStart%3D1%26ResultCount%3D15&amp;&amp;hitspage=%28Baldi+M%2E%3CIN%3Eau+%29&amp;isNumber=18730&amp;CollPer=&amp;CollCnf=&amp;CollStd=&amp;sortfield=pyr&amp;sortorder=desc%3F=IEEE+JNL&amp;arnumber=865076&amp;arSt=479&amp;ared=492&amp;arAuthor=Baldi%2C+M.%3B+Ofek%2C+Y.%3B"><img src="../images/IEEElogo.gif" border="0" height="25" width="82"></a></li>
+
+
+
+  <li>
+    
+    
+    
+    <p>M. Baldi, <a href="http://staff.polito.it/fulvio.risso">F. Risso</a>, "<a href="http://www.comsoc.org/ci1/private/2000/may/Risso.html">Efficiency of Packet Voice with Deterministic Delay</a>," <a href="http://www.comsoc.org/pubs/commag/index.html"><i>IEEE Communications Magazine</i></a>, Vol. 38, No. 5, <a href="http://www.comsoc.org/ci/public/2000/may/index.html">May 2000</a>, pp.
+170-177. <font size="2">(earlier version in <a href="../publications/IPtel_IEEEComm2000_gz.ps">gzipped
+postscript</a> and <a href="../publications/IPtel_IEEEComm2000.pdf">PDF</a> format)</font><a href="http://search.ieeexplore.ieee.org/search97/s97is.vts?action=View&amp;VdkVgwKey=841843&amp;DocOffset=3&amp;DocsFound=15&amp;QueryZip=%28Baldi+M%2E%3CIN%3Eau+%29&amp;SortField=pyr&amp;SortOrder=desc&amp;ViewTemplate=lpdocview%2Ehts&amp;SearchUrl=http%3A%2F%2Fsearch%2Eieeexplore%2Eieee%2Eorg%2Fsearch97%2Fs97is%2Evts%3Faction%3DSearch%26QueryZip%3D%2528Baldi%2BM%252E%253CIN%253Eau%2B%2529%26Filter%3Dfld%255Fsch%252Ehts%26ResultTemplate%3Dlpadv%255Fcrst%252Ehts%26QueryText%3D%2528Baldi%2BM%252E%253CIN%253Eau%2B%2529%26SortField%3Dpyr%26SortOrder%3Ddesc%26ViewTemplate%3Dlpdocview%252Ehts%26ResultStart%3D1%26ResultCount%3D15&amp;&amp;hitspage=%28Baldi+M%2E%3CIN%3Eau+%29&amp;isNumber=18201&amp;CollPer=&amp;CollCnf=&amp;CollStd=&amp;sortfield=pyr&amp;sortorder=desc%3F=IEEE+JNL&amp;arnumber=841843&amp;arSt=170&amp;ared=177&amp;arAuthor=Baldi%2C+M.%3B+Risso%2C+F.%3B"><img src="../images/IEEElogo.gif" border="0" height="25" width="82"></a></p>
+
+
+  </li>
+
+
+
+</ul>
+
+
+Other <a href="index.htm">tutorials</a> by the presenter, his <a href="../curriculum/bio.htm">short biography</a> and <a href="../curriculum/index.htm">full resume</a> are available on <a href="http://www.mario-baldi.net">his web site</a>.
+<hr>
+<table border="0" cellspacing="0">
+
+
+
+
+
+
+  <tbody>
+
+
+
+
+
+    <tr>
+
+
+
+
+
+      <td valign="middle">
+      
+      
+      
+      
+      
+      <p>Some of the documents linked to this page
+are readable using Acrobat PDF Reader that you can download by clicking the icon aside</p>
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+      <td valign="middle">
+      
+      
+      
+      
+      
+      <p><a href="http://www.adobe.com/products/acrobat/readstep.html"><img style="border: 0px solid ; width: 86px; height: 30px;" src="../images/getacro.gif" alt="Acroread"></a></p>
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+<hr>
+
+<p>Last Update in August 2006
+ </p>
+
+
+
+
+
+ 
+
+</body>
+</html>

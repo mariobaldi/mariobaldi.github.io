@@ -1,0 +1,61 @@
+       OSPF Router with ID (192.168.65.2) (Process ID 1)
+
+
+                Router Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum Link count
+192.168.64.9    192.168.64.9    608         0x8000017A 0x2B5C   4
+192.168.65.2    192.168.65.2    948         0x8000017C 0x2378   4
+192.168.196.1   192.168.196.1   1158        0x80000144 0x7AD8   4
+
+                Summary Net Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+192.168.64.0    192.168.64.9    568         0x80000004 0x6076
+192.168.64.0    192.168.65.2    927         0x80000006 0x7F5B
+192.168.128.0   192.168.196.1   1157        0x8000013D 0xC715
+
+                Summary ASB Link States (Area 0)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+192.168.65.2    192.168.64.9    303         0x80000001 0xB196
+192.168.65.2    192.168.65.2    927         0x8000001B 0xB434
+192.168.67.3    192.168.64.9    303         0x80000001 0xAAE4
+192.168.67.3    192.168.65.2    574         0x80000001 0xCDC7
+
+                Router Link States (Area 2)
+
+Link ID         ADV Router      Age         Seq#       Checksum Link count
+192.168.64.9    192.168.64.9    332         0x8000017F 0xD707   1
+192.168.65.2    192.168.65.2    943         0x8000017D 0xDF12   1
+192.168.66.7    192.168.66.7    356         0x8000018D 0x78CE   3
+192.168.67.3    192.168.67.3    323         0x8000000B 0x1D83   4
+192.168.67.4    192.168.67.4    323         0x80000004 0x8455   3
+
+                Net Link States (Area 2)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+192.168.64.9    192.168.64.9    323         0x80000005 0xBEAE
+192.168.65.7    192.168.66.7    356         0x8000001B 0x4339
+
+                Summary Net Link States (Area 2)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+192.168.0.0     192.168.64.9    584         0x80000005 0x3FA0
+192.168.0.0     192.168.65.2    126         0x80000001 0x6A7F
+192.168.128.0   192.168.64.9    640         0x80000178 0x439A
+192.168.128.0   192.168.65.2    996         0x80000176 0x6A7B
+
+                Summary ASB Link States (Area 2)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+192.168.65.2    192.168.64.9    640         0x80000141 0xE278
+
+                Type-5 AS External Link States
+
+Link ID         ADV Router      Age         Seq#       Checksum Tag
+192.168.1.0     192.168.65.2    1710        0x8000013F 0xCA7F   0
+192.168.2.0     192.168.65.2    1710        0x8000013D 0xC387   0
+192.168.16.0    192.168.67.3    657         0x80000001 0x2606   0
+192.168.65.0    192.168.65.2    1710        0x8000001A 0x55DA   0
+192.168.196.0   192.168.65.2    1710        0x8000013D 0x6523   0

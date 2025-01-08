@@ -1,0 +1,92 @@
+- - - - - - - - - - - - - - - - Frame 1 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+M    1            [255.255.255... [192.168.65.7]   RIP R Routing entries=3
+
+RIP:  ----- RIP Header -----
+RIP:  
+RIP:  Command = 2 (Response)
+RIP:  Version = 1 
+RIP:  Unused  = 0 
+RIP:  
+RIP:  Routing data frame 1 
+RIP:     Address family identifier = 2 (IP)
+RIP:     IP Address = [192.168.66.0]
+RIP:     Metric     = 1 
+RIP:  
+RIP:  Routing data frame 2 
+RIP:     Address family identifier = 2 (IP)
+RIP:     IP Address = [192.168.67.0]
+RIP:     Metric     = 2 
+RIP:  
+RIP:  Routing data frame 3 
+RIP:     Address family identifier = 2 (IP)
+RIP:     IP Address = [192.168.16.0]
+RIP:     Metric     = 2 
+RIP:  
+
+
+- - - - - - - - - - - - - - - - Frame 2 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+     2   19.5469  [255.255.255... [192.168.65.2]   RIP R Routing entries=5
+
+RIP:  ----- RIP Header -----
+RIP:  
+RIP:  Command = 2 (Response)
+RIP:  Version = 1 
+RIP:  Unused  = 0 
+RIP:  
+RIP:  Routing data frame 1 
+RIP:     Address family identifier = 2 (IP)
+RIP:     IP Address = [192.168.64.0]
+RIP:     Metric     = 2 
+RIP:  
+RIP:  Routing data frame 2 
+RIP:     Address family identifier = 2 (IP)
+RIP:     IP Address = [192.168.1.0]
+RIP:     Metric     = 1 
+RIP:  
+RIP:  Routing data frame 3 
+RIP:     Address family identifier = 2 (IP)
+RIP:     IP Address = [192.168.2.0]
+RIP:     Metric     = 1 
+RIP:  
+RIP:  Routing data frame 4 
+RIP:     Address family identifier = 2 (IP)
+RIP:     IP Address = [192.168.3.0]
+RIP:     Metric     = 2 
+RIP:  
+RIP:  Routing data frame 5 
+RIP:     Address family identifier = 2 (IP)
+RIP:     IP Address = [192.168.128.0]
+RIP:     Metric     = 2 
+RIP:  
+
+
+- - - - - - - - - - - - - - - - Frame 3 - - - - - - - - - - - - - - - - -
+
+SUMMARY  Delta T     Destination   Source        Summary
+     3    7.7137  [255.255.255... [192.168.65.7]   RIP R Routing entries=3
+
+RIP:  ----- RIP Header -----
+RIP:  
+RIP:  Command = 2 (Response)
+RIP:  Version = 1 
+RIP:  Unused  = 0 
+RIP:  
+RIP:  Routing data frame 1 
+RIP:     Address family identifier = 2 (IP)
+RIP:     IP Address = [192.168.66.0]
+RIP:     Metric     = 1 
+RIP:  
+RIP:  Routing data frame 2 
+RIP:     Address family identifier = 2 (IP)
+RIP:     IP Address = [192.168.67.0]
+RIP:     Metric     = 2 
+RIP:  
+RIP:  Routing data frame 3 
+RIP:     Address family identifier = 2 (IP)
+RIP:     IP Address = [192.168.16.0]
+RIP:     Metric     = 2 
+RIP:  

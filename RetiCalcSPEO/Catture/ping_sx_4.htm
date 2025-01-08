@@ -1,0 +1,52 @@
+
+<HTML>
+<HEAD>
+<link rel="stylesheet" href="ftie4style.css">
+<script src="ftiens4.js">
+</script>
+<script>
+foldersTree = gFld("<i><FONT Face=Arial Size=1>----- Packet Details -----</FONT></i>")
+aux1 = insFld(foldersTree, gFld("<FONT Face=Arial Size=1>----- General Information -----</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Item number 4, position in dumpfile 100%</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Item type: Partial frame, 74 bytes available</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Frame size is 74 (4Ax) bytes</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Timestamp: 11h:40m:44s:432264us</FONT>"))
+aux1 = insFld(foldersTree, gFld("<FONT Face=Arial Size=1>----- Ethernet v.2.0 MAC Header ----- [0-13]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Destination = Computer 00E063-137E01 (Universal; Vendor: ???) - [0-13]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Source = Computer 0080C7-93EEBC (Universal; Vendor: Xircom, Inc.) - [6-11]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Ethertype = 0800h (DOD Internet Protocol (IP) Xerox) - [12-13]</FONT>"))
+aux1 = insFld(foldersTree, gFld("<FONT Face=Arial Size=1>----- IPv4 Header ----- [14-33]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Version = 4 - {14-14}</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Header length = 20 bytes - {14-14}</FONT>"))
+aux2 = insFld(aux1, gFld("<FONT Face=Arial Size=1>Type of service = 00h - [15-15]</FONT>"))
+insDoc(aux2, gLnk(2,"<FONT Face=Arial Size=1> 000. .... = priority 0: routine - {15-15}</FONT>"))
+insDoc(aux2, gLnk(2,"<FONT Face=Arial Size=1> ...0 .... = normal delay - {15-15}</FONT>"))
+insDoc(aux2, gLnk(2,"<FONT Face=Arial Size=1> .... 0... = normal throughput - {15-15}</FONT>"))
+insDoc(aux2, gLnk(2,"<FONT Face=Arial Size=1> .... .0.. = normal reliability - {15-15}</FONT>"))
+insDoc(aux2, gLnk(2,"<FONT Face=Arial Size=1> .... ..0. = normal monetary cost - {15-15}</FONT>"))
+insDoc(aux2, gLnk(2,"<FONT Face=Arial Size=1> .... ...0 = Reserved bit, for future usage, which has to be 0 - {15-15}</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Total length = 60 bytes - [16-17]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Identification = 9064 - [18-19]</FONT>"))
+aux2 = insFld(aux1, gFld("<FONT Face=Arial Size=1>Flags = 0h - {20-20}</FONT>"))
+insDoc(aux2, gLnk(2,"<FONT Face=Arial Size=1> 0... .... = must be 0 - {20-20}</FONT>"))
+insDoc(aux2, gLnk(2,"<FONT Face=Arial Size=1> .0.. .... = may fragment - {20-20}</FONT>"))
+insDoc(aux2, gLnk(2,"<FONT Face=Arial Size=1> ..0. .... = last fragment - {20-20}</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Fragment offset = 0 bytes - {20-21}</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Time to live = 32 seconds/hops - [22-22]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Protocol = 1 (ICMP [Internet Control Message]) - [23-23]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Header checksum = 69B7h - [24-25]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Source address = [130.192.5.33] - [26-29]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Destination address = [130.192.3.1] - [30-33]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>No IP options - [14-14]</FONT>"))
+aux1 = insFld(foldersTree, gFld("<FONT Face=Arial Size=1>----- ICMP Header ----- [34-37]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Type 0x8 Echo Request. - [34-34]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Code 0x0 No significant Code. - [35-35]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Checksum 0x435C - [36-37]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Identifier 512 - [38-39]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Sequence Number 2048 - [40-41]</FONT>"))
+aux1 = insFld(foldersTree, gFld("<FONT Face=Arial Size=1>----- Data ----- [42-73]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>[32 byte(s) of data]</FONT>"))
+initializeDocument()
+</script>
+</HEAD>
+</HTML>

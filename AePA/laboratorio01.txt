@@ -1,0 +1,92 @@
+Laurea in Ingegneria Elettronica
+Corso di Algoritmi e Programmazione Avanzata - 01EIP 
+Anno Accademico 2001-2002
+Esercizi Proposti per il Laboratorio
+ 
+Esercitazione di laboratorio numero 1
+-------------------------------------
+
+
+
+Esercizio 1
+-----------
+
+Confronto di algoritmi di ardinamento con complessita` diverse.
+
+Si realizzi un programma che:
+* legga un numero positivo N limitato a 10000
+* generi casualmente N numeri interi memorizzandoli in un vettore
+  (si utilizzi a tale proposito la funzione di libreria C rand)
+* ordini tale vettore in maniera crescente oppure decrescente (scelta
+  effettuata dall'utente) utilizzando uno dei seguenti algoritmi (scelta
+  effettuata dall'utente):
+  * insertion sort
+  * counting sort
+  * merge sort
+Si confrontino le prestazioni dei vari algoritmi al crescere di N confrontando
+i tempi di esecuzione.
+
+Per misurare i tempi di esecuzione e' possibile utilizzare la funzione
+di libreria clock(). Tale funzione puo' essere chiamata previa
+inclusione di <time.h>. Dividendo il valore ritornato per la costante
+CLK_TCK si ottiene il tempo (in secondi) intercorso dall'inizio del
+programma. Un esempio di utilizzo di questa funzione e' il seguente:
+
+/*----------------------------------------------------------------------*/
+#include <time.h>
+
+...
+float t0, t1;
+
+t0 = ((float)clock())/CLK_TCK;
+
+/* parte di programma di cui si vuole misurare la durata */
+
+t1 = ((float)clock())/CLK_TCK;
+
+printf("Tempo di esecuzione in secondi: %f\n", t1-t0);
+/*----------------------------------------------------------------------*/
+
+Esercizio 2
+-----------
+
+Fusione (merge) multi-vettore (di stringhe).
+
+Premessa : conoscenza dell'algoritmo di fusione (merge) tra due
+           vettori, e.g., dati due vettori ordinati (in maniera ascendente o
+           discendente) produrre un terzo vettore contenente tutti gli
+           elementi dei primi due disposti con il medesimo ordinamento.
+
+Un file di testo ha il seguente formato:
+
+nVettori
+nElementi
+<stringa-1>
+<stringa-2>
+<stringa-3>
+...
+<stringa-n>
+
+In cui nVettori, nElementi sono numeri interi e <stringa-1> ... <stringa-n>
+stringhe di caratteri (non contenenti caratteri di spaziatura e di lunghezza
+massima uguale a 20 caratteri).
+nVettori indica il numero di vettori di cui effettuare la fusione (massimo 99)
+e nElementi il numero di elementi di ciascun vettore (massimo 99 elementi).
+Le stringhe riportate sulle righe successive sono in numero pari a
+nVettori*nElementi.
+Tutti i vettori di strighe hanno la stessa lunghezza: le prime nElementi
+stringhe, da <stringa-1> a <stringa-nElementi>, sono quelle contenute nel
+primo vettore, e cosi` via per i vettori successivi.
+
+Scrivere un programma in linguaggio C che realizzi la fusione degli nVettori
+vettori ordinati (lessicograficamente), ciascuno di lunghezza nElementi.
+Ovvero che:
+* legga il nome di due file
+* legga gli nVettori vettori (ordinati) dal primo file
+* generi un vettore di nVettori*nElementi elementi anch'esso ordinato
+* memorizzi il contenuto di tale vettore sul secondo file.
+
+Si verifichi che i vettori introdotti siano ordinati, interrompendo
+l'esecuzione in caso contrario.
+Si utilizzi per memorizzare ciascun vettore di caratteri un matrice allocata
+staticamente.

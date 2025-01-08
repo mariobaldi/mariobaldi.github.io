@@ -1,0 +1,33 @@
+
+<HTML>
+<HEAD>
+<link rel="stylesheet" href="ftie4style.css">
+<script src="ftiens4.js">
+</script>
+<script>
+foldersTree = gFld("<i><FONT Face=Arial Size=1>----- Packet Details -----</FONT></i>")
+aux1 = insFld(foldersTree, gFld("<FONT Face=Arial Size=1>----- General Information -----</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Item number 2, position in dumpfile 3%</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Item type: Partial frame, 60 bytes available</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Frame size is 60 (3Cx) bytes</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Timestamp: 11h:31m:26s:477450us</FONT>"))
+aux1 = insFld(foldersTree, gFld("<FONT Face=Arial Size=1>----- Ethernet v.2.0 MAC Header ----- [0-13]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Destination = Computer 0080C7-93EEBC (Universal; Vendor: Xircom, Inc.) - [0-13]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Source = Computer 00E063-137E01 (Universal; Vendor: ???) - [6-11]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Ethertype = 0806h (ARP Address Resolution Protocol (for IP and for CHAOS) Symbolics?) - [12-13]</FONT>"))
+aux1 = insFld(foldersTree, gFld("<FONT Face=Arial Size=1>----- ARP frame ----- [14-41]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Hardware type 1 Ethernet - [14-15]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Protocol Type = 0800h IP - [16-17]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Length of hardware address = 6 bytes - [18-18]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Length of protocol address = 4 bytes - [19-19]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Operation code 2 Reply - [20-21]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Sender's hardware address = 00E063-137E01 (Vendor: ???) - [22-27]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Sender's protocol address = [130.192.5.17] - [28-31]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Target hardware address = 0080C7-93EEBC (Vendor: Xircom, Inc.) - [32-37]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Target protocol address = [130.192.5.33] - [38-41]</FONT>"))
+aux1 = insFld(foldersTree, gFld("<FONT Face=Arial Size=1>----- Padding ----- [42-42]</FONT>"))
+insDoc(aux1, gLnk(2,"<FONT Face=Arial Size=1>Padding 0x74 - [42-59]</FONT>"))
+initializeDocument()
+</script>
+</HEAD>
+</HTML>

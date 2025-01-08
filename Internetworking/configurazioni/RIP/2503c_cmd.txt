@@ -1,0 +1,10 @@
+2503c#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+2503c(config)#router rip
+2503c(config-router)#network 192.168.65.0
+2503c(config-router)#network 192.168.66.0
+2503c(config-router)#passive-interface BRI0
+2503c(config-router)#timers basic 30 180 120 300
+2503c(config-router)#exit
+2503c(config)#exit
+2503c#

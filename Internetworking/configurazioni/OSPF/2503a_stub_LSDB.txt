@@ -1,0 +1,13 @@
+                Router Link States (Area 1)
+
+Link ID         ADV Router      Age         Seq#       Checksum Link count
+192.168.196.1   192.168.196.1   1015        0x80000139 0x980E   1
+
+                Summary Net Link States (Area 1)
+
+Link ID         ADV Router      Age         Seq#       Checksum
+0.0.0.0         192.168.196.1   357         0x80000001 0x3ED0
+192.168.1.0     192.168.196.1   357         0x8000013D 0x7EA9
+192.168.2.0     192.168.196.1   357         0x8000013B 0xF9EE
+192.168.3.0     192.168.196.1   357         0x80000139 0x70B9
+192.168.64.0    192.168.196.1   357         0x80000002 0x9588

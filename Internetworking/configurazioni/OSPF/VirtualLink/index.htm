@@ -1,0 +1,62 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.51 [en] (Win95; I) [Netscape]">
+   <meta name="Author" content="Mario Baldi e Pietro Nicoletti">
+   <title>Internetworking: progetto del routing statico</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#6600FF" vlink="#CC3399" alink="#FF0000">
+&nbsp;
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td><img SRC="small.gif" ALT="Immagine della copertina del libro" BORDER=0 height=178 width=196 align=LEFT></td>
+
+<td>
+<center>
+<h1>
+<i>Inter</i><font face="Arial">net</font><i>working</i></h1></center>
+
+<center><font size=+2>Mario Baldi e Pietro Nicoletti</font></center>
+
+<p><br></td>
+</tr>
+</table>
+
+<center>
+<h1>
+Virtual link</h1></center>
+Si &egrave; creato un virtual link tra BayNetworks AN1 e Cisco 1600 in
+modo da far diventare AN1 area border router e poter definire una nuova
+area che include la rete locale cui AN1 &egrave; collegato, come mostato
+nella figura seguente. Si &egrave; inoltre impostata l'aggregazione delle
+destinazioni della backbone area e dell'area 2.
+<center>
+<p><a href="virtualLink.gif"><img SRC="virtualLinkSmall.gif" ALT="Suddivisione in aree OSPF sulla rete di laboratorio" height=383 width=575></a></center>
+Sono disponibili una serie di informazioni riguardanti i vari router:
+<ul>
+<li>
+configurazione di Cisco <a href="1600_cfg.txt">1600</a> e di BayNetworks
+<a href="AN1_cfg.txt">AN1</a>;</li>
+
+<li>
+vicini di Cisco <a href="1600_neighbor.txt">1600</a> e di BayNetworks <a href="AN1_neighbor.txt">AN1</a>;</li>
+
+<li>
+virtual link di Cisco <a href="1600_virtualLink.txt">1600</a>;</li>
+
+<li>
+tabella di routing di Cisco <a href="2503a_RT.txt">2503a</a> e <a href="1600_RT.txt">1600</a>
+e di BayNetworks <a href="AN1_RT.txt">AN1</a>;</li>
+
+<li>
+base dati dei link state advertisement di Cisco <a href="1600_LSDB.txt">1600</a>
+e di BayNetworks <a href="AN1_LSDB.txt">AN1</a>;</li>
+
+<li>
+link state advertisement di tipo 1 (<a href="1600_LSA1.txt">router LSA</a>)
+della backbone area.</li>
+</ul>
+
+</body>
+</html>

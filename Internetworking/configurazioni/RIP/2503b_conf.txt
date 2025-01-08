@@ -1,0 +1,44 @@
+
+Current configuration:
+!
+version 11.2
+no service udp-small-servers
+no service tcp-small-servers
+!
+hostname 2503b
+!
+enable password libro
+!
+!
+interface Ethernet0
+ ip address 192.168.65.2 255.255.255.0
+ ip rip send version 1
+ ip rip receive version 1
+!
+interface Serial0
+ ip address 192.168.1.2 255.255.255.0
+!
+interface Serial1
+ ip address 192.168.2.2 255.255.255.0
+!
+interface BRI0
+ ip address 192.168.196.2 255.255.255.0
+ shutdown
+!
+router rip
+ version 2
+ timers basic 30 180 120 300
+ passive-interface BRI0
+ network 192.168.1.0
+ network 192.168.2.0
+ network 192.168.65.0
+!
+no ip classless
+!
+line con 0
+line aux 0
+line vty 0 4
+ password libro
+ login
+!
+end

@@ -1,0 +1,11 @@
+1600#config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+1600(config)#router rip
+1600(config-router)#version 2
+1600(config-router)#network 192.168.64.0
+1600(config-router)#network 192.168.3.0
+1600(config-router)#network 192.168.3.0
+1600(config-router)#timers basic 30 180 120 300
+1600(config-router)#exit
+1600(config)#exit
+1600#
